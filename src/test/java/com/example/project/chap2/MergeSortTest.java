@@ -1,8 +1,11 @@
 package com.example.project.chap2;
+
 import org.junit.jupiter.api.Test;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Comparator;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MergeSortTest {
