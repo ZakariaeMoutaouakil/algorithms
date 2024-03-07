@@ -6,6 +6,10 @@ import com.example.project.AbstractSortingAlgorithm;
 import java.util.Comparator;
 
 public class QuickSort<T> extends AbstractSortingAlgorithm<T> {
+    public QuickSort() {
+        super();
+    }
+
     public QuickSort(Comparator<T> comparator) {
         super(comparator);
     }

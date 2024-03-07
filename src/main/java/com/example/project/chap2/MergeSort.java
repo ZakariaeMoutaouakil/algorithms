@@ -6,6 +6,9 @@ import com.example.project.AbstractSortingAlgorithm;
 import java.util.Comparator;
 
 public class MergeSort<T> extends AbstractSortingAlgorithm<T> {
+    public MergeSort() {
+        super();
+    }
 
     public MergeSort(Comparator<T> comparator) {
         super(comparator);

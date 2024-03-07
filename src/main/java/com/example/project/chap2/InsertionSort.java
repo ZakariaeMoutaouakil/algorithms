@@ -6,6 +6,10 @@ import com.example.project.AbstractSortingAlgorithm;
 import java.util.Comparator;
 
 public class InsertionSort<T> extends AbstractSortingAlgorithm<T> {
+    public InsertionSort() {
+        super();
+    }
+
     public InsertionSort(Comparator<T> comparator) {
         super(comparator);
     }

@@ -28,8 +28,7 @@ public class InsertionSortTest {
     @Test
     public void testSortWithEmptyArray() {
         // Arrange
-        Comparator<Integer> comparator = Comparator.naturalOrder();
-        InsertionSort<Integer> insertionSort = new InsertionSort<>(comparator);
+        InsertionSort<Integer> insertionSort = new InsertionSort<>();
         Integer[] array = {};
         Integer[] expected = {}; // Empty array remains unchanged
 

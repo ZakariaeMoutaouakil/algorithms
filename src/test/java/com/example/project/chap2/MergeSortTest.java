@@ -13,7 +13,7 @@ class MergeSortTest {
     @Test
     void mergeSort_mergesTwoSortedArraysIntoOne() throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         // Given
-        MergeSort<Integer> mergeSort = new MergeSort<Integer>(Comparator.naturalOrder());
+        MergeSort<Integer> mergeSort = new MergeSort<>();
         Integer[] A = {1, 3, 5, 2, 4, 6};
         Integer[] expected = {1, 2, 3, 4, 5, 6};
         Method mergeMethod = MergeSort.class.getDeclaredMethod("merge", Object[].class, int.class, int.class, int.class);
