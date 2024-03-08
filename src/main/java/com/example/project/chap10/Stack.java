@@ -1,6 +1,5 @@
 package com.example.project.chap10;
 
-
 public class Stack<T> {
     private final T[] stack;
     private final int size;
