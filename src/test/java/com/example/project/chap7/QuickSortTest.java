@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class QuickSortTest {
     private Comparator<Integer> comparator;
@@ -14,6 +15,15 @@ public class QuickSortTest {
     @BeforeEach
     public void setUp() {
         comparator = Comparator.naturalOrder();
+    }
+
+    @Test
+    void testNoArgsConstructor() {
+        // Attempt to create an instance using the no-args constructor
+        QuickSort<Integer> quickSort = new QuickSort<>();
+
+        // Assert that the instance is not null, indicating successful instantiation
+        assertNotNull(quickSort);
     }
 
     @Test
