@@ -14,6 +14,7 @@ public class MergeSort<T> extends AbstractSortingAlgorithm<T> {
         super(comparator);
     }
 
+    @SuppressWarnings("unchecked")
     private void merge(T[] A, int p, int q, int r) {
         int n1 = q - p + 1;
         int n2 = r - q;

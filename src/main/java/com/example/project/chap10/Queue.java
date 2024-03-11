@@ -6,6 +6,7 @@ public class Queue<T> {
     private int head;
     private int tail;
 
+    @SuppressWarnings("unchecked")
     public Queue(int n) {
         array = (T[]) new Object[n + 1];
         size = n;

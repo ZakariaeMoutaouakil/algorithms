@@ -5,6 +5,7 @@ public class Stack<T> {
     private final int size;
     private int top; // index of the top element
 
+    @SuppressWarnings("unchecked")
     public Stack(int n) {
         this.stack = (T[]) new Object[n];
         this.size = n;
